@@ -1,0 +1,18 @@
+Here is my solution for extension:
+
+1. Products outside of the Household Essentials category.
+    I can see that the site is using different ID of sub-category section in each category page.
+    Ex:
+        The sub-category dom is <div id="shop-by-needs"> in "Household & Pet Essentials" category.
+        The sub-category dom is <div id="baby-categories"> in "Baby & Kids" category.
+
+    So the code can be extendable to other categories only if we set sub-category dom for each category.
+    Ex:
+        var _dom;
+        if ( category_name == "Household & Pet Essentials" )
+            _dom = "#shop-by-needs";
+
+2. Domains beyond Walgreens.com.
+    I can just reuse this codebase for other domains.
+    I am not sure about extension because each site has different formart.
+    If there are similar sites, maybe extendable or pretty simple to make the code for the others.
